@@ -15,15 +15,15 @@ const Home = () => {
       <Logo />
       <div className="row-span-5 grid grid-rows-5 grid-cols-2">
         <div className="col-span-2 md:col-span-1 row-span-5 grid grid-rows-5">
-          <h1 className="row-span-1 flex justify-center items-end  text-4xl text-indigo-400 font-serif">
-            Get Started
+          <h1 className="row-span-2 flex justify-center items-center  text-4xl text-indigo-400 font-serif">
+            Rate Your Favourite Movies
           </h1>
-          <Search />
+
           <button
-            className="row-span-2 mt-12 mx-24 h-[5rem] rounded-xl bg-indigo-400 text-2xl text-white font-serif  hover:text-gray-200  hover:shadow-sm hover:shadow-indigo-500"
+            className="row-span-2 mt-10 mx-24 h-[5rem] rounded-xl bg-indigo-400 text-2xl text-white font-serif  hover:text-gray-200  hover:shadow-sm hover:shadow-indigo-500"
             onClick={() => setToDashboard(true)}
           >
-            Log In
+            Get Started
           </button>
           <div className="row-span-1 flex gap-2 items-end p-2 text-indigo-400">
             <p>Image by </p>

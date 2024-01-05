@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MovieCard from "../features/movies/MovieCard";
 import SearchMovie from "../features/movies/SearchMovie";
 import { MovieContext } from "../services/MovieContext";
+import MovieRatingCard from "../features/movies/MovieRatingCard";
 
 const Dashboard = () => {
   const [movies, setMovies] = useState([]);
@@ -32,8 +33,10 @@ const Dashboard = () => {
         </div>
 
         {/*  */}
-        <div className="fixed top-32 left-[50%] min-h-[80%] w-[48%] mx-4 mt-10 border-2 border-gray-400 rounded-lg shadow-lg shadow-gray-500">
-          {/* Movie Rating Card*/}
+        <div className="fixed left-[50%] min-h-[90%] w-[48%] mx-4 mt-10 border-2 border-gray-400 rounded-lg shadow-lg shadow-gray-500">
+          <MovieRatingCard
+            data={movies?.find((movie) => movie.imdbID === activeMovie)}
+          />
         </div>
         {/*  */}
       </div>
