@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .background {
+  z-index: -1;
   background-image: url("../public/virtual-reality-headset-popcorn.jpg");
   @apply bg-cover bg-center;
 }
